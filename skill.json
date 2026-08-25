@@ -1,0 +1,38 @@
+{
+  "name": "genpark-dynamic-javascript-clean-markdown-web-scraper-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Dynamic JavaScript web scraper rendering complex single-page apps into clean structured markdown.",
+  "author": "genpark",
+  "category": "web-crawler",
+  "tags": [
+    "firecrawl",
+    "crawl4ai",
+    "spa-crawler",
+    "clean-markdown",
+    "llm-web-scraper"
+  ],
+  "inputs": {
+    "target_url": {
+      "type": "string"
+    },
+    "wait_for_selectors": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "crawl_job_id": {
+      "type": "string"
+    },
+    "javascript_dom_rendered": {
+      "type": "boolean"
+    },
+    "clean_markdown_bytes": {
+      "type": "integer"
+    },
+    "llm_ready_markdown_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
